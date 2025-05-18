@@ -1,1 +1,139 @@
-# kakinada.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kakinada City</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f0f8ff;
+        }
+
+        h1, h2 {
+            color: #004080;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Flex container for images */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .image-gallery .image-item {
+            flex: 1 1 45%;
+        }
+
+        .caption {
+            font-size: 0.9em;
+            text-align: center;
+            color: #555;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .image-gallery {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Kakinada</h1>
+
+    <p>Kakinada is a beautiful city located in the state of Andhra Pradesh, India. It is known for its clean beaches, seafood, and friendly people.
+        Kakinada is located at a distance of about 65 Km from Rajahmundry in East Godavari district of Andhra Pradesh. It is the largest city of entire 
+        district and is spread over an area of 192.3 square Kms (74.2 sq mi). It is one of the most prominent cities of entire Andhra Pradesh and attracts
+         a huge number of visitors every day. It has the status of a municipal corporation and is the 6th largest city in Andhra Pradesh by Area.
+    </p>
+
+    <h2>About the City</h2>
+    <p>Kakinada is an important port city on the east coast of India. It is also a major hub for education, industry, and information technology.
+        Kakinada Port is a large complex comprising Kakinada Anchorage Port, Kakinada Deep Water Port, Kakinada Fishing Harbour and Ship-Breaking Unit. 
+        Kakinada Anchorage Port has a century-long tradition.
+    </p>
+
+    <h2>Popular Places to Visit</h2>
+    <ul>
+        <li><strong>Kakinada Beach</strong> – A peaceful beach perfect for evening walks.</li>
+        <li><strong>Coringa Wildlife Sanctuary</strong> – A mangrove forest with rich biodiversity.</li>
+        <li><strong>Hope Island</strong> – A small island that protects the city from storms.</li>
+    </ul>
+
+    <h2>Images of Kakinada</h2>
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="beach.jpg" alt="Kakinada Beach">
+            <p class="caption">Kakinada Beach</p>
+        </div>
+        <div class="image-item">
+            <img src="coringa.jpg" alt="Coringa Sanctuary">
+            <p class="caption">Boating in Coringa Wildlife Sanctuary</p>
+        </div>
+    </div>
+
+    <h2>Learn More</h2>
+    <p>For more information about Kakinada, visit the <a href="https://en.wikipedia.org/wiki/Kakinada" target="_blank">
+        Wikipedia page.</a>To view the satelite view of Kakinada city,visit the
+        <a href="https://maps.app.goo.gl/NZfMC3HwMNxWqs1JA?g_st=aw" target="_blank"> Webpage</a>.</p>
+       
+  <!-- Button that will be centered using JavaScript -->
+<div id="button-container">
+    <button id="centerButton" onclick="showMessage()">Click Me!</button>
+</div>
+
+<script>
+    function showMessage() {
+        alert("Welcome to Kakinada City!");
+    }
+
+    // Center the button using JavaScript
+    const container = document.getElementById('button-container');
+    container.style.display = 'flex';
+    container.style.justifyContent = 'center';
+    container.style.alignItems = 'center';
+    container.style.marginTop = '30px';
+
+    // Style the button using JavaScript
+    const button = document.getElementById('centerButton');
+    button.style.backgroundColor = '#007BFF';
+    button.style.color = '#ffffff';
+    button.style.padding = '12px 25px';
+    button.style.border = 'none';
+    button.style.borderRadius = '5px';
+    button.style.fontSize = '16px';
+    button.style.cursor = 'pointer';
+    button.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+
+    // Add hover effect
+    button.onmouseover = function() {
+        button.style.backgroundColor = '#0056b3';
+    };
+    button.onmouseout = function() {
+        button.style.backgroundColor = '#007BFF';
+    };
+</script>
+
+
+</body>
+</html>
